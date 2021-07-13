@@ -28,7 +28,7 @@
         class="d-flex flex-column justify-center"
         cols="4"
       >
-        <ShoppingList :list="list" />
+        <ShoppingList @isbuy="changeList" :list="list" />
       </v-col>
     </v-row>
   </v-container>
@@ -57,10 +57,12 @@ export default {
   },
   methods: {
     async addList(product) {
-      console.log(product)
-      this.list = await this.$axios.$post('/api/shoppingList/addProduct',{
-        productId: product._id
+      this.list = await this.$axios.$post('/api/shoppingList/addProduct', {
+        productId: product._id,
       })
+    },
+    changeList(items) {
+      this.list = [items]
     },
   },
 }
