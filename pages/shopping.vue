@@ -37,6 +37,7 @@
 
 <script>
 export default {
+  middleware: 'auth',
   async asyncData({ $axios }) {
     const [listProduct, shoppingList] = await Promise.all([
       $axios.$get('/api/products'),

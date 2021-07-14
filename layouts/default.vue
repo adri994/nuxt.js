@@ -47,11 +47,6 @@ export default {
           title: 'Shopping List',
           to: '/shopping',
         },
-        {
-          icon: 'mdi-note-outline',
-          title: 'Post-Notes',
-          to: '/inspire',
-        },
       ],
       title: 'Vuetify.js',
     }
