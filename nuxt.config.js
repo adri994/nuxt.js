@@ -37,19 +37,19 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // baseURL:'https://fridgyapp.herokuapp.com/'
-    baseURL:'http://localhost:5501/'
+    baseURL: 'https://fridgyapp.herokuapp.com/'
+    // baseURL:'http://localhost:5501/'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

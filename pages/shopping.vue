@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid >
     <v-row no-gutters>
       <v-col cols="5" offset="-3" class="mt=3">
         <ProductsList
@@ -85,4 +85,5 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 </style>
